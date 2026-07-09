@@ -1,17 +1,4 @@
-# Vivado generated outputs
-*.jou
-*.log
-*.pb
-*.wdb
-*.wcfg
-*.str
-*.rpt
-*.rpx
-*.dcp
-*.bit
-*.bin
-*.elf
-
+# Vivado / FPGA generated outputs
 .Xil/
 *.cache/
 *.runs/
@@ -19,16 +6,46 @@
 *.hw/
 *.ip_user_files/
 *.tmp/
+*.jou
+*.log
+*.pb
+*.rpt
+*.rpx
+*.dcp
+*.bit
+*.bin
+*.mcs
 
-# Vitis generated outputs
+# Vitis / CMake generated outputs
 build/
 Debug/
 Release/
-_ide/bitstream/
-image/BOOT.bin
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.elf
+*.obj
+*.o
+*.out
+*.size
+.ninja_deps
+.ninja_log
+build.ninja
+.buildstatus
 
-# Editor and OS noise
+# Python generated outputs
+__pycache__/
+*.pyc
+runs/
+datasets/
+
+# Local IDE / OS files
 .vscode/
 .idea/
 Thumbs.db
 Desktop.ini
+
+# Keep trained/demo model artifacts only when intentionally placed under
+# software/rk3588_yolo/models/.
+*.engine
+*.rknn

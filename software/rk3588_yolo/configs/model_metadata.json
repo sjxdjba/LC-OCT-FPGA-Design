@@ -1,0 +1,24 @@
+{
+  "task": "LC-OCT FPGA processed structural lesion detection",
+  "architecture": "YOLOv8n",
+  "input_size": [640, 640],
+  "classes": ["lesion"],
+  "recommended_conf_threshold": 0.40,
+  "recommended_nms_iou_threshold": 0.50,
+  "dataset_split": {
+    "train_images": 455,
+    "valid_images": 97,
+    "test_images": 98
+  },
+  "metrics": {
+    "valid_map50": 0.9947,
+    "test_map50": 0.9772,
+    "test_positive_detected_at_conf_0_40": "75/75",
+    "test_negative_false_positive_at_conf_0_40": "0/23"
+  },
+  "model_files": {
+    "pytorch": "models/yolov8n_lcoct_fpga_best.pt",
+    "onnx": "models/yolov8n_lcoct_fpga_best.onnx"
+  }
+}
+

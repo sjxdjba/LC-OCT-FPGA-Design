@@ -1,22 +1,17 @@
 # Hardware
 
-## Vivado Project Snapshot
+## Zynq-7020 PZT Control
 
-`vivado_project/` contains the current Vivado project metadata needed to identify the active hardware design:
+`zynq7020_pzt_control/` contains the control-side Verilog IP package for ADC/DAC/PZT capture and closed-loop control.
 
-- `motor_monitor.xpr`
-- `motor_monitor.srcs/sources_1/bd/system/system.bd`
-- `motor_monitor.srcs/sources_1/bd/system/ip/*.xci`
-- `motor_monitor.srcs/sources_1/new/system_iobuf_top.v`
-- `motor_monitor.srcs/constrs_1/new/adc_dac_pin.xdc`
-- `motor_monitor.gen/sources_1/bd/system/hdl/system_wrapper.v`
+## XC7A35T Image Processing / PCIe
 
-## Active Custom IP
+`xc7a35t_image_pcie/` contains the image-processing FPGA project snapshot for the Ascent Pro XC7A35T board.
 
-`ip/model_capture_axi_top_v4_1_rev6/ipshared_1423/` is the HDL source snapshot for the actual BD instance:
+Important entry points:
 
-- VLNV: `xilinx.com:user:model_capture_axi_top:4.1`
-- IP revision: `6`
-- Instance XCI: `vivado_project/motor_monitor.srcs/sources_1/bd/system/ip/system_model_capture_axi_top_0_5.xci`
-
-This IP includes the closed-loop PZT velocity-control path and the matching AXI-Lite register map used by `software/vitis_closed_1_1`.
+- Top module: `fpga_tuxiang_pcie_current/pcie/xilinx_dma_pcie_ep.sv`
+- PCIe image app: `fpga_tuxiang_pcie_current/pcie/ascent_pcie_ph_app.v`
+- LC-OCT processing wrapper: `fpga_tuxiang_pcie_current/ph_pcie_ip/ph_ip.v`
+- Core pipeline: `fpga_tuxiang_pcie_current/ph_pcie_ip/ph_core_pipeline.v`
+- Build scripts: `fpga_tuxiang_pcie_current/prj/create_project.tcl`, `fpga_tuxiang_pcie_current/prj/build_bitstream.tcl`

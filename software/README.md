@@ -1,13 +1,13 @@
 # Software
 
-`vitis_closed_1_1/` is the latest standalone Vitis application source found in the workspace.
+## Zynq-7020 Closed Loop App
 
-It uses:
+`zynq7020_closed_loop_app/` is the standalone Vitis application for the Zynq-7020 control side.
 
-- Application name: `closed_1_1`
-- Platform: `closed_loop`
-- CPU: `ps7_cortexa9_0`
-- OS: `standalone`
-- Hardware control base: `XPAR_MODEL_CAPTURE_AXI_TOP_0_BASEADDR`
+## RK3588 Qt Panel
 
-The application banner is `Dual PZT Closed Loop Control App 1.1`.
+`rk3588_qt_panel/` is the current Qt panel source used for capture, preview, XDMA status/control, and YOLO/RKNN workflow launch.
+
+## RK3588 YOLO Package
+
+`rk3588_yolo/` contains training, evaluation, prediction, ONNX export, and deployment notes for the LC-OCT lesion-detection model.

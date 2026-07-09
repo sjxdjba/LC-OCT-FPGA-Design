@@ -1,0 +1,9 @@
+path: /path/to/fpga_processed_lcoct_dataset
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names:
+  - lesion
+
