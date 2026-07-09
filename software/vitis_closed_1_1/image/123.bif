@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\sjxdjba\Desktop\fpgastudy\zynq\motor_monitor_test\vitis\closed_loop\export\closed_loop\sw\boot\fsbl.elf
+	C:\Users\sjxdjba\Desktop\fpgastudy\zynq\motor_monitor_test\vitis\closed_1_1\_ide\bitstream\pzt_ctl_closed_loop.bit
+	C:\Users\sjxdjba\Desktop\fpgastudy\zynq\motor_monitor_test\vitis\closed_1_1\build\closed_1_1.elf
+}

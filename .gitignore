@@ -1,0 +1,34 @@
+# Vivado generated outputs
+*.jou
+*.log
+*.pb
+*.wdb
+*.wcfg
+*.str
+*.rpt
+*.rpx
+*.dcp
+*.bit
+*.bin
+*.elf
+
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.tmp/
+
+# Vitis generated outputs
+build/
+Debug/
+Release/
+_ide/bitstream/
+image/BOOT.bin
+
+# Editor and OS noise
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
