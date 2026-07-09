@@ -9,7 +9,9 @@ This repository is the organized source snapshot for the LC-OCT intelligent imag
 - `hardware/xc7a35t_image_pcie/` - XC7A35T image-processing and PCIe/XDMA FPGA design snapshot.
 - `software/rk3588_qt_panel/` - RK3588 Qt capture/control panel source.
 - `software/rk3588_yolo/` - RK3588 YOLOv8n lesion-detection source package, including the current PT/ONNX model artifacts.
+- `docs/design/` - design report in PDF/DOCX format.
 - `docs/handover/` - current hardware/software handover notes.
+- `media/demo/` - demo video, stored through Git LFS.
 
 ## Main Subsystems
 
@@ -50,3 +52,5 @@ Generated outputs are intentionally excluded from the latest tree:
 - `BOOT.bin`, `.bit`, `.elf`, object files, and local logs
 
 The YOLO `.pt` and `.onnx` model files are retained because they are small enough for GitHub and are part of the runnable RK3588 demo snapshot.
+
+The demo MP4 is larger than GitHub's normal single-file limit, so it is tracked with Git LFS.
